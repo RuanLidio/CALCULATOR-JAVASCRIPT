@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <div class = "about">
+            <div class = "textAbout">
+            <h1>Calculator</h1>
+            <h2>This is my first JavaScript 
+                project</h2>
+            <p class="p-one">This project 
+                is a simple and interactive
+                 web-based calculator built
+                  using HTML, CSS, 
+                  and JavaScript. It 
+                  was developed as a way 
+                  to practice front-end
+                   development concepts and
+                    improve problem-solving
+                     skills through real-world 
+                     functionality.</p>
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="calculator-screen" id="calculator-screen">
+                <div class="num-camp">
+                    <input class = "num-input" type="text" id="box" >
+                </div>
+            <div class="num-pad">
+                <div class="operators">
+                    <button class="operator-btn" onclick="setOperator('+')" id="add">+</button>
+                    <button class="operator-btn" onclick="setOperator('-')" id="subtract">-</button>
+                    <button class="operator-btn" onclick="setOperator('x')" id="multiply">×</button>
+                    <button class="operator-btn" onclick="setOperator('/')" id="divide">÷</button>
+                </div>
+
+                <div class = "numbers">
+                    <button class="number" onclick="enter(1)" id="one">1</button>
+                    <button class="number" onclick="enter(2)"id="two">2</button>
+                    <button class="number" onclick="enter(3)"id="three">3</button>
+                    <button class="number" onclick="enter(4)" id="four">4</button>
+                    <button class="number" onclick="enter(5)" id="five">5</button>
+                    <button class="number" onclick="enter(6)" id="six">6</button>
+                    <button class="number" onclick="enter(7)" id="seven">7</button>
+                    <button class="number" onclick="enter(8)" id="eight">8</button>
+                    <button class="number" onclick="enter(9)"id="nine">9</button>
+                    <button class="number" onclick="returnResult()"id="return">←</button>
+                    <button class="number" onclick="enter(0)"id="zero">0</button>
+                    <button class="number" onclick="finalResult()" id="equal">=</button>
+                </div>
+                 </div>
+            </div>
+                
+                
+        </div>
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
